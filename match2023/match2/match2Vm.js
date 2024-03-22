@@ -26,7 +26,7 @@ const user_config = {
 }
 
 // 打印帮助信息
-QXVM_GENERATE.help()
+// QXVM_GENERATE.help()
 
 let result = QXVM_GENERATE.sanbox(js_code, "get_dddd", user_config);
 console.log(result.get_dddd())
