@@ -72,7 +72,7 @@ lwVm.safefunction(Node);
         },
         get firstChild() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).firstChild, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).firstChild, this);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'firstChild', arguments, result);
             return result;
         },
